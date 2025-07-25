@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foodieland Navbar</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="navbar">
+            <div class="container">
+                <img src="/images/Foodieland..svg" alt="Logo" class="logo" />
+                <nav class="nav-links">
+                    <a href="#Home">Home</a>
+                    <a href="#Recipes">Recipes</a>
+                    <a href="#Blog">Blog</a>
+                    <a href="#Contact">Contact</a>
+                    <a href="#About">About us</a>
+                </nav>
+                <div class="social-icons">
+                    <a href="#"><img src="/images/001-facebook.svg" alt="Facebook"></a>
+                    <a href="#"><img src="images/Path.svg" alt="Twitter"></a>
+                    <a href="#"><img src="images/004-instagram.svg" alt="004-instagram"></a>
+                </div>
+            </div>
+        </header>
+        <hr>
+      <!-- Slider Section 1-->
+    <section class="recipe-slider">
+        <div class="recipe-card">
+            <div class="recipe-content">
+                <div class="tag">
+                <img src="/images/image 14.svg" alt="icon" />
+                Hot Recipes
+                </div>
+                <h1>Spicy delicious chicken wings</h1>
+            <div class="info-tags">
+                <div class="info-tag">
+                    <div class="tag-icon">
+                        <img src="images/Timer.svg" alt="Clock">
+                    </div>
+                    <div class="tag-text">30 Minutes</div>
+                </div>
+                <div class="info-tag">
+                    <div class="tag-icon">
+                        <img src="images/ForkKnife.svg" alt="fork and knife">
+                    </div>
+                    <div class="tag-text">Chicken</div>
+                </div>
+            </div>
+            <div class="link-page">
+            <div class="author">
+                <img src="images/Ellipse 2.svg" alt="Author" />
+                <div>
+                    <strong>John Smith</strong><br>
+                    <small>15 March 2022</small>
+                </div>
+            </div>
+            <button class="view-btn"><img src="images/Vector.svg" alt="play"> View Recipes</button>
+            </div>
+        </div>
+        <div class="recipe-image">
+            <img src="/images/slider.svg" alt="Chicken Wings" />
+            
+        </div>
+    </div>
+    <!-- Slider Section 2-->
+    <div class="recipe-card">
+            <div class="recipe-content">
+                <div class="tag">
+                <img src="/images/image 14.svg" alt="icon" />
+                Hot Recipes
+                </div>
+                <h1>Spicy delicious chicken wings</h1>
+            <div class="info-tags">
+                <div class="info-tag">
+                    <div class="tag-icon">
+                        <img src="images/Timer.svg" alt="Clock">
+                    </div>
+                    <div class="tag-text">30 Minutes</div>
+                </div>
+                <div class="info-tag">
+                    <div class="tag-icon">
+                        <img src="images/ForkKnife.svg" alt="fork and knife">
+                    </div>
+                    <div class="tag-text">Chicken</div>
+                </div>
+            </div>
+            <div class="link-page">
+            <div class="author">
+                <img src="images/Ellipse 2.svg" alt="Author" />
+                <div>
+                    <strong>John Smith</strong><br>
+                    <small>15 March 2022</small>
+                </div>
+            </div>
+            <button class="view-btn"><img src="images/Vector.svg" alt="play"> View Recipes</button>
+            </div>
+        </div>
+        <div class="recipe-image">
+            <img src="/images/slider.svg" alt="Chicken Wings" />
+            
+        </div>
+    </div>
+    <!-- Slider Section 3-->
+   <div class="recipe-card">
+            <div class="recipe-content">
+                <div class="tag">
+                <img src="/images/image 14.svg" alt="icon" />
+                Hot Recipes
+                </div>
+                <h1>Spicy delicious chicken wings</h1>
+            <div class="info-tags">
+                <div class="info-tag">
+                    <div class="tag-icon">
+                        <img src="images/Timer.svg" alt="Clock">
+                    </div>
+                    <div class="tag-text">30 Minutes</div>
+                </div>
+                <div class="info-tag">
+                    <div class="tag-icon">
+                        <img src="images/ForkKnife.svg" alt="fork and knife">
+                    </div>
+                    <div class="tag-text">Chicken</div>
+                </div>
+            </div>
+            <div class="link-page">
+            <div class="author">
+                <img src="images/Ellipse 2.svg" alt="Author" />
+                <div>
+                    <strong>John Smith</strong><br>
+                    <small>15 March 2022</small>
+                </div>
+            </div>
+            <button class="view-btn"><img src="images/Vector.svg" alt="play"> View Recipes</button>
+            </div>
+        </div>
+        <div class="recipe-image">
+            <img src="/images/slider.svg" alt="Chicken Wings" />
+            
+        </div>
+    </div>
+</section>
+        <script>
+            $(document).ready(function () {
+                $('.recipe-slider').slick({
+                    dots: false,
+                    infinite: true,
+                    speed: 800,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 4000,
+                    arrows: false
+                });
+            });
+        </script>
+        <!--Categories-->
+<section class="categories">
+    <div class="container">
+        <h2>Categories</h2>
+        <button class="cat-btn">View All Categories</button>
+    </div>
+
+    <div class="cards-wrapper">
+  <div class="card card-breakfast">
+    <a href="#" class="image-link">
+      <img src="/images/image 25.svg" alt="Breakfast">
+      <div class="caption">Breakfast</div>
+    </a>
+  </div>
+  <div class="card card-vegan">
+    <a href="#" class="image-link">
+      <img src="/images/image 20.svg" alt="Vegan">
+      <div class="caption">Vegan</div>
+    </a>
+  </div>
+  <div class="card card-meat">
+    <a href="#" class="image-link">
+      <img src="/images/image 21.svg" alt="Meat">
+      <div class="caption">Meat</div>
+    </a>
+  </div>
+  <div class="card card-desert">
+    <a href="#" class="image-link">
+      <img src="/images/image 22.svg" alt="Desert">
+      <div class="caption">Desert</div>
+    </a>
+  </div>
+  <div class="card card-lunch">
+    <a href="#" class="image-link">
+      <img src="/images/image 23.svg" alt="Lunch">
+      <div class="caption">Lunch</div>
+    </a>
+  </div>
+  <div class="card card-chocolate">
+    <a href="#" class="image-link">
+      <img src="/images/image 24.svg" alt="Chocolate">
+      <div class="caption">Chocolate</div>
+    </a>
+  </div>
+</div>
+ 
+</section>
+<!--Recipies-->
+<section class="recipies">
+<div class="container">
+    <h2>Simple and tasty recipes</h2>
+    <p>Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim </p>
+</div>
+<!--card1-->
+<div class="card card-recipe">
+    <div class="like">
+    <img src="/images/Group 852.svg" alt="Like it">
+    </div>
+    <a href="#" class="image-link">
+        <img src="/images/Mask Group (1).svg" alt="Recipie 1">
+      <div class="caption">Big and Juicy Wagyu Beef Cheeseburger</div>
+      <div class="info-tags">
+                <div class="info-tag">
+                    <div class="tag-icon">
+                        <img src="images/Timer.svg" alt="Clock">
+                    </div>
+                    <div class="tag-text">30 Minutes</div>
+                </div>
+                <div class="info-tag">
+                    <div class="tag-icon">
+                        <img src="images/ForkKnife.svg" alt="fork and knife">
+                    </div>
+                    <div class="tag-text">Snack</div>
+                </div>
+            </div>
+    </a>
+</div>
+<!--card2-->
+<div class="card card-recipe">
+    <div class="like">
+    <img src="/images/Group 852.svg" alt="Like it">
+    </div>
+    <a href="#" class="image-link">
+        <img src="/images/Mask Group (1).svg" alt="Recipie 1">
+      <div class="caption">Fresh Lime Roasted Salmon with Ginger Sauce</div>
+      <div class="info-tags">
+                <div class="info-tag">
+                    <div class="tag-icon">
+                        <img src="images/Timer.svg" alt="Clock">
+                    </div>
+                    <div class="tag-text">30 Minutes</div>
+                </div>
+                <div class="info-tag">
+                    <div class="tag-icon">
+                        <img src="images/ForkKnife.svg" alt="fork and knife">
+                    </div>
+                    <div class="tag-text">Fish</div>
+                </div>
+            </div>
+    </a>
+</div>
+</section>
+</div>
+</body>
+</html>
