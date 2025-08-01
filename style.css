@@ -45,12 +45,15 @@ body {
   height: auto;
   overflow: auto;
 }
-#menu-toggle:checked ~ .wrapper {
-  height: 100vh;
-  overflow: hidden;
+#menu-toggle {
+  display: none;
 }
 #menu-toggle:checked ~ .wrapper .nav-links {
-  display: block; 
+  display: flex;
+  flex-direction: column; 
+  height: 100vh;
+    position: absolute;
+    width: 100vw;
 }
 .menu-toggle-checkbox {
   display: none;
@@ -123,7 +126,7 @@ max-width: 470px;
   font-size: 64px;
   line-height: 68px;
   color: #000;
-  margin-bottom: 20px;
+  margin-bottom: 45px;
 }
 .info-tags {
     margin-bottom: 15px;
@@ -146,6 +149,7 @@ max-width: 470px;
   display: flex;
   justify-content: space-between;
   gap: 10px;
+  margin-top: 45px;
 }
 .author {
   display: flex;
@@ -157,17 +161,18 @@ max-width: 470px;
   height: auto;
 }
 .view-btn {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  background-color: #000;
-  color: #fff;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 15px;
-  cursor: pointer;
-  font-size: 14px;
-  font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #000;
+    color: #fff;
+    padding: 14px 22px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 .view-btn:hover {
   background-color: #97dbe8;
@@ -181,6 +186,9 @@ max-width: 470px;
 .categories{
   margin: 0 60px 40px 60px;
 }
+.categories .container{
+  display: block;
+}
 .cat-btn{
   background: #E7FAFE;
     padding: 12px 22px;
@@ -189,10 +197,15 @@ max-width: 470px;
     font-size: 12px;
     font-weight: 500;
     color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 .cat-btn:hover{
   background-color: #97dbe8;
   color: #000;
+}
+.cat-content{
+  display: flex;
+  justify-content: space-between;
 }
 .card {
   flex: 1 1 14%;
@@ -214,6 +227,7 @@ max-width: 470px;
     width: 100px;
     height: auto;
     margin: 0;
+    border-radius: 15px;
 }
  .caption {
     font-size: 18px;
@@ -224,10 +238,11 @@ max-width: 470px;
 }
 .cards-wrapper {
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  gap: 20px; 
-  padding: 20px 60px;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 34px;
+  row-gap: 25px; 
+  padding: 20px 0;
 }
 .card-breakfast {
   background: linear-gradient(#70824600, #7082461A);
@@ -252,7 +267,6 @@ max-width: 470px;
   padding: 10px 25px;
   max-width: 325px;
   background: linear-gradient(#E7F9FD00, #E7F9FD);
-  margin: 10px 15px 20px 15px;
 }
 .card-recipe .image-link {
   text-decoration: none;
@@ -276,4 +290,856 @@ max-width: 470px;
     position: relative;
     top: 70px;
     left: 225px;
+}
+.card6{
+  color: white;
+  background-image: 
+    linear-gradient(#357355, #1D483B),
+    radial-gradient(circle, #3A795B 30%, #1D483B00 80%);
+  border-radius: 0;
+  box-shadow: 0;
+  text-align: center;
+}
+.card6 h2 {
+  margin-top: 25px;
+      font-size: 18px;
+      line-height: 22px;
+      margin-bottom: 20px;
+      font-family: 'Lobster';
+      font-style: italic;
+    }
+.card6 img {
+      width: 250px;
+      height: auto;
+      margin: 0;
+    }
+.card6 p {
+      margin: 20px 0;
+      font-size: 14px;
+      font-family: Lobster;
+    }
+.recipies .container{
+  display: block;
+}
+.text{
+  text-align: center;
+}
+.text h2{
+  margin-bottom: 10px;
+}
+.text p{
+  color: #00000099;
+  font-size: 12px;
+  line-height: 16px;
+}
+.chef{
+  margin: 0 60px 40px 60px;
+}
+.chef .container{
+  justify-content: space-between;
+}
+.chef-img img{
+  max-width: 450px;
+}
+.content {
+    max-width: 500px;
+}
+.content p {
+    margin-bottom: 40px;
+    color: #00000099;
+    font-size: 14px;
+    line-height: 18px;
+}
+.content h2 {
+    font-size: 36px;
+    line-height: 40px;
+    margin-bottom: 40px;
+}
+.content btn{
+  margin-bottom: 20px;
+}
+.cta{
+  margin: 0 40px 80px 40px;
+  position: relative;
+}
+.cta .container{
+  display: block;
+}
+.cta-section{
+  margin-bottom: 40px;
+  border-radius: 30px;
+}
+.cta-content{
+  padding: 70px;
+  text-align: center;
+  background-color: #E7F9FD;
+  border-radius: 44px;
+}
+.cta-content h2{
+  font-size: 28px;
+  line-height: 32px;
+  margin-bottom: 25px;
+}
+.cta-content p{
+  font-size: 14px;
+  color: #00000099;
+  line-height: 20px;
+  margin-bottom: 50px;
+}
+.subscription-block {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.subscription-box {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 8px;
+    border-radius: 14px;
+    max-width: max-content;
+}
+.subscription-box input {
+    padding: 0px 100px 0 10px;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 14px;
+}
+.image1,
+.image2 {
+  position: absolute;
+  bottom: -4px;
+}
+.image1 {
+  left: 20px;
+}
+.image2 {
+  right: 20px;
+}
+.image1 img,
+.image2 img {
+  max-width: 300px;
+  border-radius: 44px;
+}
+.cta .view-btn{
+  font-weight: normal;
+}
+.recipies4u {
+  margin-bottom: 40px;
+}
+.recipies4u .container{
+  display: block;
+}
+.recipies4u .card{
+  max-width: 250px;
+}
+.text4u {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 45px;
+    align-items: center;
+}
+.recipies4u .card{
+  background: none;
+}
+.recipies4u .card .card-recipe{
+  max-width: 180px;
+  height: auto;
+  position: relative;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0);
+  text-align: center;
+  margin: 0; 
+  padding-bottom: 20px;
+}
+.recipies4u .like img {
+    max-width: 27px;
+    height: auto;
+    position: relative;
+    top: 65px;
+    left: 210px;
+}
+.recipies4u .card-recipe img {
+    width: 250px;
+    height: auto;
+    margin: 0;
+}
+.recipies4u .cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 20px;
+    row-gap: 0px;
+}
+.recipies4u .card-recipe {
+  padding: 0;
+}
+.recipies4u .caption{
+  font-size: 15px;
+}
+.recipies4u .text4u p{
+    font-size: 14px;
+    line-height: 18px;
+    padding: 0 0 0 70px;
+    color: #00000099;
+}
+.recipies4u .text4u h2{
+    font-size: 38px;
+    line-height: 42px;
+}
+.footer{
+  margin: 0 40px 40px;
+}
+.footer .container{
+  display: block;
+  color: #00000099;
+  font-size: 14px;
+  line-height: 18px;
+}
+.topPart{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.bottomPart{
+  display: flex;
+  justify-content: end;
+  gap: 300px;
+}
+.footer .container hr{
+  margin: 10px 0 40px 0;
+}
+.footer .nav-links a {
+    font-size: 14px;
+    font-weight: 400;
+}
+.footer .nav-links {
+    gap: 40px;
+}
+.footer .logo{
+  margin-bottom: 6px;
+}
+.red-word{
+  color:rgb(255, 84, 84);
+}
+
+@media screen and (max-width: 1440px) {
+.cards-wrapper {
+    column-gap: 30px;
+}
+.card-recipe {
+    padding: 0 25px;
+}
+}
+
+@media screen and (max-width: 1199px) {
+.social-icons {
+    gap: 25px;
+}
+.nav-links {
+    gap: 25px;
+}
+.recipe-content h1 {
+    font-size: 40px;
+    line-height: 44px;
+    margin-bottom: 50px;
+}
+.info-tag{
+    padding: 6px 10px 4px;
+}
+.recipe-content {
+    padding: 40px 0px 40px 25px;
+}
+.tag {
+    margin-bottom: 20px;
+}
+.view-btn{
+    padding: 14px 15px;
+}
+.info-tags{
+    margin-bottom: 50px;
+}
+.slick-slide img {
+    max-width: 457px;
+}
+.cards-wrapper {
+    column-gap: 25px;
+}
+.categories .image-link img {
+        width: 90px;
+}
+.categories .info-tags {
+    margin-bottom: 15px;
+}
+.card-recipe {
+    padding: 10px 13px;
+}
+.recipies4u .text4u p {
+    padding: 0px 0 0 55px;
+}
+.text4u {
+    padding: 0px 80px;
+}
+.card .info-tags {
+    margin-bottom: 15px;
+}
+.card-recipe {
+    padding: 10px 20px;
+}
+.like img {
+    left: 215px;
+}
+.chef {
+    margin: 0 0 40px 0;
+}
+.categories {
+    margin: 0 0 40px 0;
+}
+.navbar {
+    margin: 40px 0;
+}
+hr {
+    margin: 40px 0;
+}
+.text4u {
+    padding: 0;
+}
+.recipies4u .text4u p {
+    padding: 0 0 0 45px;
+}
+.card-recipe img {
+    width: 260px;
+}
+.recipies4u .card-recipe img {
+    width: 285px;
+}
+.recipies4u .card-recipe {
+        padding: 0;
+        max-width: 295px;
+    }
+}
+.recipies4u .like img {
+    top: 70px;
+    left: 240px;
+}
+.cta {
+    margin: 0 0 55px 0;
+}
+.cta-content {
+    padding: 70px 70px 85px 70px;
+}
+.image1 img, .image2 img {
+    max-width: 255px;
+}
+.footer {
+    margin: 0 0 20px;
+}
+.bottomPart {
+    gap: 250px;
+}
+
+@media screen and (max-width: 991px) {
+.nav-links {
+    gap: 25px;
+}
+hr {
+  margin: 40px 15px;
+}
+.nav-links a {
+    font-size: 16px;
+    line-height: 20px;
+}
+.social-icons {
+    gap: 20px;
+}
+.recipies{
+  margin-bottom: 40px;
+}
+.recipe-content {
+  padding: 20px 0 20px 20px;
+}
+.recipe-content h1 {
+  font-size: 34px;
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+.slick-slide img {
+    max-width: 328px;
+}
+.view-btn {
+        padding: 14px 12px;
+        border-radius: 8px;
+        font-size: 14px;
+        gap: 0;
+}
+.cards-wrapper {
+    column-gap: 26px;
+}
+.cards-wrapper {
+    column-gap: 26px;
+}
+.card-recipe {
+    padding: 12px 12px;
+}
+    .tag {
+        margin-bottom: 10px;
+            padding: 4px 7px;
+    border-radius: 16px;
+    font-size: 10px;
+    }
+    .info-tags .info-tag img {
+    max-width: 16px;
+}
+.tag img {
+        max-width: 14px;
+        border-radius: 0;
+}
+.link-page {
+    margin-top: 0;
+}
+    .info-tags {
+        margin-bottom: 45px;
+    }
+.card card-recipe .image-link img {
+    max-width: 275px;
+}
+.card .like img {
+    max-width: 30px;
+    height: auto;
+    position: relative;
+    top: 70px;
+    left: 225px;
+}
+.subscription-box input {
+    padding: 0px 10px 0 4px;
+    font-size: 12px;
+}
+.card-recipe {
+    max-width: 285px;
+}
+    .cards-wrapper {
+        column-gap: 20px;
+    }
+.recipies4u .cards-wrapper {
+    column-gap: 30px;
+    row-gap: 0px;
+}
+.recipies4u .card-recipe img {
+    width: 255px;
+}
+.recipies4u .text4u h2 {
+    font-size: 34px;
+    line-height: 40px;
+}
+.cta-content {
+    padding: 55px;
+    border-radius: 35px;
+}
+.cta-content p {
+    margin-bottom: 30px;
+}
+.image1 img, .image2 img {
+    max-width: 230px;
+    border-radius: 35px;
+}
+.bottomPart {
+    gap: 200px;
+}
+}
+
+@media screen and (max-width: 767px) {
+.navbar {
+    margin: 25px 15px 40px 15px;
+}
+.logo {
+    max-width: 90px;
+}
+.nav-links {
+    gap: 15px;
+}
+.nav-links a {
+    font-size: 13px;
+    line-height: 17px;
+}
+.social-icons {
+    gap: 8px;
+}
+.fb-icon img{
+    max-width: 6px;
+}
+.twitter-icon img{
+    max-width: 14px;
+}
+.insta-icon img{
+    max-width: 12px;
+}
+hr{
+    margin: 0 15px 40px 15px;
+}
+
+.recipe-content {
+    padding: 15px 0 15px 15px;
+}
+.recipe-content h1 {
+    font-size: 28px;
+    line-height: 34px;
+	  margin-bottom: 20px;
+}
+.slick-slide img {
+    max-width: 269px;
+	  border-radius: 20px
+}
+.slick-slide .view-btn {
+        margin-top: 6px;
+        padding: 8px 10px;
+        border-radius: 8px;
+        font-size: 10px;
+        gap: 6px;
+}
+.link-page{
+	  margin-top: 0;
+    display: block;
+}
+.slick-slide {
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.tag {
+        background: #fff;
+        border-radius: 14px;
+        font-size: 8px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+.cat-btn {
+    padding: 9px 16px;
+}    
+.cards-wrapper {
+  column-gap: 10px;
+}
+.tag img {
+    max-width: 12px;
+    border-radius: 0;
+}
+.tag-icon img {
+    max-width: 14px;
+}
+.info-tag {
+    padding: 3px 6px 3px;
+    border-radius: 13px;
+    font-size: 12px;
+    gap: 3px;
+}
+.slick-slide .author img {
+    max-width: 35px;
+    height: auto;
+}
+.author{
+  gap: 5px;
+}
+.author strong {
+    font-size: 12px;
+}
+.author small{
+    font-size: 10px;
+}
+.view-btn img {
+    height: auto;
+}
+.recipe-content h1 {
+        font-size: 22px;
+        line-height: 28px;
+        margin-bottom: 15px;
+    }
+    .info-tags {
+        margin-bottom: 12px;
+    }
+.categories {
+ margin: 0 0 40px 0;
+}
+.card-recipe {
+        padding: 0px 14px;
+	max-width: 258px;
+}    
+.card .like img {
+        max-width: 25px;
+        top: 65px;
+        left: 190px;
+}
+.card-recipe img {
+    width: 230px;
+    margin: 0 0 14px 0;
+}
+.card6 h2 {
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 8px;
+}
+.card6 p {
+    margin: 0 0 10px 0;
+    font-size: 12px;
+}
+.chef {
+        margin: 0 0 40px 0;
+}
+.content h2 {
+    font-size: 28px;
+    line-height: 32px;
+    margin-bottom: 10px;
+}
+.content p {
+    margin-bottom: 12px;
+    font-size: 12px;
+    line-height: 16px;
+}
+.chef-img img {
+    max-width: 290px;
+}
+.recipies4u{
+  margin-bottom: 40px;
+}
+.recipies4u .text4u p {
+    font-size: 12px;
+    line-height: 16px;
+    padding: 0px 0 0 15px;
+}
+.recipies4u .text4u h2 {
+        font-size: 28px;
+        line-height: 32px;
+    }
+.text4u {
+  padding: 0;
+}
+.recipies4u .card .like img {
+        max-width: 25px;
+        top: 40px;
+        left: 215px;
+}
+.cta {
+    margin: 0 0 40px 0;
+}
+br{
+  display: none;
+}
+.subscription-box input {
+    padding: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 12px;
+}
+    .image1 img, .image2 img {
+        max-width: 180px;
+        border-radius: 20px;
+    }
+       .cta-content {
+        padding: 30px 50px 50px 50px;
+        border-radius: 20px;
+    }
+.cta .view-btn {	
+	font-weight: normal;
+        padding: 8px 10px;
+        border-radius: 6px;
+        font-size: 12px;
+}
+.subscription-box {
+    padding: 4px;
+    border-radius: 10px;
+}
+.image1 img, .image2 img {
+        max-width: 150px;
+        border-radius: 20px;
+}
+.cta-content h2 {
+    font-size: 26px;
+    line-height: 30px;
+    margin-bottom: 15px;
+}
+.cta-content p {
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 20px;
+}
+.footer .nav-links a {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px
+}
+.footer .nav-links {
+    gap: 20px;
+}
+.footer p {
+    font-size: 10px;
+    line-height: 14px;
+}
+.topPart {
+    margin-bottom: 10px;
+}
+.footer {
+    margin: 0px 0px 20px;
+}
+.footer .container hr {
+    margin: 0px 0 15px 0;
+}
+.bottomPart {
+  justify-content: space-between;
+}
+.recipe-slider {
+  margin-bottom: 40px;
+}
+}
+
+@media screen and (max-width: 575px) {
+.container {
+  padding: 0 15px;
+  position: relative;
+  flex-wrap: wrap;
+}
+.hamburger {
+        display: block;
+}
+.nav-links {
+  display: none;
+  flex-direction: column;
+  gap: 30px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  padding: 20px 0;
+  z-index: 999;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+}
+  #menu-toggle:checked ~ .mobile-menu {
+    display: flex;
+    flex-direction: column;
+  }
+  #menu-toggle:checked ~ .wrapper {
+    height: 100vh;
+    overflow: hidden;
+    position: fixed;
+    width: 100vw;
+  }
+.logo {
+  max-width: 140px;
+}
+.social-icons {
+  display: none;
+}
+.navbar {
+  margin: 10px 10px 20px 10px;
+}
+hr {
+  margin: 0 10px 20px 10px;
+}
+.slick-initialized .slick-slide {
+  display: block !important;
+  background: linear-gradient(#E7F9FD, #E7F9FD00);
+}
+.recipe-content {
+  padding: 15px 15px 15px 15px;
+}
+.recipe-content h1 {
+  font-size: 34px;
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+.info-tags {
+  margin-bottom: 25px;
+}
+.slick-slide img {
+  max-width: 330px;
+}
+.caption {
+  font-size: 16px;
+  line-height: 20px;
+  padding-bottom: 20px;
+}
+.categories .image-link img {
+  width: 85px;
+}
+.cards-wrapper {
+  padding: 0;
+}
+.card-recipe {
+  padding: 0px 15px;
+  max-width: 328px;
+}
+.card .info-tags {
+  margin-bottom: 25px;
+}
+.card .like img {
+  max-width: 30px;
+  top: 70px;
+  left: 250px;
+}
+.recipies .cards-wrapper {
+  column-gap: 0;
+  row-gap: 0;
+}
+.card-recipe img {
+  width: 300px;
+  margin: 0 0 14px 0;
+}
+.card6 {
+  margin-top: 45px;
+}
+.chef-img img {
+  max-width: 355px;
+}
+.recipies4u .text4u h2 {
+        font-size: 24px;
+        line-height: 28px;
+}
+.recipies4u .text4u h2 {
+        font-size: 18px;
+        line-height: 22px;
+}
+.recipies4u .text4u p {
+        font-size: 10px;
+        line-height: 14px;
+        padding: 0;
+}
+.recipies4u .card-recipe img {
+        width: 285px;
+        margin-bottom: 20px;
+}
+.info-tags .tag-icon img {
+        margin: 0;
+}
+.cta-content p {
+        font-size: 10px;
+        line-height: 14px;
+        margin-bottom: 0px;
+}
+.cta-content h2 {
+        font-size: 22px;
+        line-height: 26px;
+        margin-bottom: 10px;
+}
+.cta-content {
+        padding: 20px 25px 95px 25px;
+}
+.image1 img, .image2 img {
+        max-width: 120px;
+}
+.cta .view-btn {
+        font-weight: normal;
+        padding: 6px 8px;
+        border-radius: 4px;
+        font-size: 10px;
+}
+.subscription-box input {
+        font-size: 10px;
+}
+.cta-content {
+        padding: 20px 25px 70px 25px;
+}
+.bottomPart {
+        gap: 0;
+        justify-content: start;
+}
 }

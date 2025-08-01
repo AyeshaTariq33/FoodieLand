@@ -3,17 +3,20 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foodieland Navbar</title>
+    <title>Foodieland</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 <body>
-    <div class="wrapper">
-        <header class="navbar">
+<input type="checkbox" id="menu-toggle" />
+<div class="wrapper">
+<header class="navbar">
             <div class="container">
-                <img src="/images/Foodieland..svg" alt="Logo" class="logo" />
+                <img src="/images/Foodieland..svg" alt="Logo" class="logo"/>
+                  <input type="checkbox" id="menu-toggle" class="menu-toggle menu-toggle-checkbox" />
+  <label for="menu-toggle" class="menu-icon hamburger">☰</label>
                 <nav class="nav-links">
                     <a href="#Home">Home</a>
                     <a href="#Recipes">Recipes</a>
@@ -22,15 +25,15 @@
                     <a href="#About">About us</a>
                 </nav>
                 <div class="social-icons">
-                    <a href="#"><img src="/images/001-facebook.svg" alt="Facebook"></a>
-                    <a href="#"><img src="images/Path.svg" alt="Twitter"></a>
-                    <a href="#"><img src="images/004-instagram.svg" alt="004-instagram"></a>
+                    <a class="fb-icon"   href="#"><img src="/images/001-facebook.svg" alt="Facebook"></a>
+                    <a class="twitter-icon" href="#"><img src="images/Path.svg" alt="Twitter"></a>
+                    <a class="insta-icon" href="#"><img src="images/004-instagram.svg" alt="004-instagram"></a>
                 </div>
             </div>
-        </header>
-        <hr>
-      <!-- Slider Section 1-->
-    <section class="recipe-slider">
+</header>
+<hr>
+<!-- Slider Section 1-->
+ <section class="recipe-slider">
         <div class="recipe-card">
             <div class="recipe-content">
                 <div class="tag">
@@ -145,7 +148,7 @@
         </div>
     </div>
 </section>
-        <script>
+<script>
             $(document).ready(function () {
                 $('.recipe-slider').slick({
                     dots: false,
@@ -158,14 +161,14 @@
                     arrows: false
                 });
             });
-        </script>
-        <!--Categories-->
+</script>
+<!--Categories-->
 <section class="categories">
     <div class="container">
+        <div class="cat-content">
         <h2>Categories</h2>
         <button class="cat-btn">View All Categories</button>
-    </div>
-
+        </div>
     <div class="cards-wrapper">
   <div class="card card-breakfast">
     <a href="#" class="image-link">
@@ -204,14 +207,16 @@
     </a>
   </div>
 </div>
- 
+ </div>
 </section>
 <!--Recipies-->
 <section class="recipies">
 <div class="container">
+    <div class="text">
     <h2>Simple and tasty recipes</h2>
-    <p>Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim </p>
-</div>
+    <p>Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut<br> labore et dolore magna aliqut enim ad minim </p>
+    </div>
+<div class="cards-wrapper">
 <!--card1-->
 <div class="card card-recipe">
     <div class="like">
@@ -239,10 +244,10 @@
 <!--card2-->
 <div class="card card-recipe">
     <div class="like">
-    <img src="/images/Group 852.svg" alt="Like it">
+    <img src="/images/Group 851.svg" alt="Like it">
     </div>
     <a href="#" class="image-link">
-        <img src="/images/Mask Group (1).svg" alt="Recipie 1">
+        <img src="/images/Mask Group (2).svg" alt="Recipie 2">
       <div class="caption">Fresh Lime Roasted Salmon with Ginger Sauce</div>
       <div class="info-tags">
                 <div class="info-tag">
@@ -259,6 +264,435 @@
                 </div>
             </div>
     </a>
+</div>
+<!--card3-->
+<div class="card card-recipe">
+    <div class="like">
+    <img src="/images/Group 851.svg" alt="Like it">
+    </div>
+    <a href="#" class="image-link">
+        <img src="/images/image 26.svg" alt="Recipie 3">
+      <div class="caption">Strawberry Oatmeal Pancake with Honey Syrup</div>
+      <div class="info-tags">
+                <div class="info-tag">
+                    <div class="tag-icon">
+                        <img src="images/Timer.svg" alt="Clock">
+                    </div>
+                    <div class="tag-text">30 Minutes</div>
+                </div>
+                <div class="info-tag">
+                    <div class="tag-icon">
+                        <img src="images/ForkKnife.svg" alt="fork and knife">
+                    </div>
+                    <div class="tag-text">Breakfast</div>
+                </div>
+            </div>
+    </a>
+</div>
+<!--card4-->
+<div class="card card-recipe">
+    <div class="like">
+    <img src="/images/Group 852.svg" alt="Like it">
+    </div>
+    <a href="#" class="image-link">
+        <img src="/images/image 26 (1).svg" alt="Recipie 3">
+      <div class="caption">Fresh and Healthy Mixed Mayonnaise Salad</div>
+      <div class="info-tags">
+                <div class="info-tag">
+                    <div class="tag-icon">
+                        <img src="images/Timer.svg" alt="Clock">
+                    </div>
+                    <div class="tag-text">30 Minutes</div>
+                </div>
+                <div class="info-tag">
+                    <div class="tag-icon">
+                        <img src="images/ForkKnife.svg" alt="fork and knife">
+                    </div>
+                    <div class="tag-text">Healthy</div>
+                </div>
+            </div>
+    </a>
+</div>
+<!--card5-->
+<div class="card card-recipe">
+    <div class="like">
+    <img src="/images/Group 851.svg" alt="Like it">
+    </div>
+    <a href="#" class="image-link">
+        <img src="/images/image 26 (2).svg" alt="Recipie 3">
+      <div class="caption">Chicken Meatballs with Cream Cheese</div>
+      <div class="info-tags">
+                <div class="info-tag">
+                    <div class="tag-icon">
+                        <img src="images/Timer.svg" alt="Clock">
+                    </div>
+                    <div class="tag-text">30 Minutes</div>
+                </div>
+                <div class="info-tag">
+                    <div class="tag-icon">
+                        <img src="images/ForkKnife.svg" alt="fork and knife">
+                    </div>
+                    <div class="tag-text">Meat</div>
+                </div>
+            </div>
+    </a>
+</div>
+<!--card6-->
+<div class="card card-recipe card6">
+    <h2>
+        Don’t forget to eat<br> healthy food
+    </h2>
+    <div class="card6-img">
+    <img src="images/01.svg" alt="food">
+    </div>
+    <p>www.foodieland.com</p>
+</div>
+<!--card7-->
+<div class="card card-recipe">
+    <div class="like">
+    <img src="/images/Group 852.svg" alt="Like it">
+    </div>
+    <a href="#" class="image-link">
+        <img src="/images/image 26 (5).svg" alt="Recipie 3">
+      <div class="caption">Fruity Pancake with Orange & Blueberry</div>
+      <div class="info-tags">
+                <div class="info-tag">
+                    <div class="tag-icon">
+                        <img src="images/Timer.svg" alt="Clock">
+                    </div>
+                    <div class="tag-text">30 Minutes</div>
+                </div>
+                <div class="info-tag">
+                    <div class="tag-icon">
+                        <img src="images/ForkKnife.svg" alt="fork and knife">
+                    </div>
+                    <div class="tag-text">Sweet</div>
+                </div>
+            </div>
+    </a>
+</div>
+<!--card8-->
+<div class="card card-recipe">
+    <div class="like">
+    <img src="/images/Group 851.svg" alt="Like it">
+    </div>
+    <a href="#" class="image-link">
+        <img src="/images/image 26 (4).svg" alt="Recipie 3">
+      <div class="caption">The Best Easy One Pot Chicken and Rice</div>
+      <div class="info-tags">
+                <div class="info-tag">
+                    <div class="tag-icon">
+                        <img src="images/Timer.svg" alt="Clock">
+                    </div>
+                    <div class="tag-text">30 Minutes</div>
+                </div>
+                <div class="info-tag">
+                    <div class="tag-icon">
+                        <img src="images/ForkKnife.svg" alt="fork and knife">
+                    </div>
+                    <div class="tag-text">Snack</div>
+                </div>
+            </div>
+    </a>
+</div>
+<!--card9-->
+<div class="card card-recipe">
+    <div class="like">
+    <img src="/images/Group 851.svg" alt="Like it">
+    </div>
+    <a href="#" class="image-link">
+        <img src="/images/image 26 (3).svg" alt="Recipie 3">
+      <div class="caption">The Creamiest Creamy Chicken and Bacon Pasta</div>
+      <div class="info-tags">
+                <div class="info-tag">
+                    <div class="tag-icon">
+                        <img src="images/Timer.svg" alt="Clock">
+                    </div>
+                    <div class="tag-text">30 Minutes</div>
+                </div>
+                <div class="info-tag">
+                    <div class="tag-icon">
+                        <img src="images/ForkKnife.svg" alt="fork and knife">
+                    </div>
+                    <div class="tag-text">Noodles</div>
+                </div>
+            </div>
+    </a>
+</div>
+</div>
+</div>
+</section>
+<!--Everyone is chef-->
+<section class="chef">
+    <div class="container">
+        <div class="content">
+            <h2>Everyone can be a<br> chef in their own kitchen</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eum dolorem itaque, eveniet suscipit nulla voluptatum molestias minima odit beatae aliquam non modi at accusamus fuga saepe ducimus. Ullam, et?</p>
+        <button class="view-btn">Learn More</button>
+        </div>
+        <div class="chef-img">
+        <img src="images/Group 880.svg" alt="Master Cheff">
+        </div>
+    </div>
+</section>
+<!--Recipies-for-you-->
+<section class="recipies4u">
+<div class="container">
+    <div class="text4u">
+    <h2>Try this delicious recipe to make your day</h2>
+    <p>Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim </p>
+    </div>
+<div class="cards-wrapper">
+<!--card1-->
+<div class="card card-recipe">
+    <div class="like">
+    <img src="/images/Group 852.svg" alt="Like it">
+    </div>
+    <a href="#" class="image-link">
+        <img src="/images/image 26 (6).svg" alt="Recipie 1">
+      <div class="caption">Mixed Tropical Fruit Salad with Superfood Boosts </div>
+      <div class="info-tags">
+                <div class="info-tag">
+                    <div class="tag-icon">
+                        <img src="images/Timer.svg" alt="Clock">
+                    </div>
+                    <div class="tag-text">30 Minutes</div>
+                </div>
+                <div class="info-tag">
+                    <div class="tag-icon">
+                        <img src="images/ForkKnife.svg" alt="fork and knife">
+                    </div>
+                    <div class="tag-text">Healthy</div>
+                </div>
+            </div>
+    </a>
+</div>
+<!--card2-->
+<div class="card card-recipe">
+    <div class="like">
+    <img src="/images/Group 851.svg" alt="Like it">
+    </div>
+    <a href="#" class="image-link">
+        <img src="/images/image 26 (7).svg" alt="Recipie 2">
+      <div class="caption">Big and Juicy Wagyu Beef Cheeseburger</div>
+      <div class="info-tags">
+                <div class="info-tag">
+                    <div class="tag-icon">
+                        <img src="images/Timer.svg" alt="Clock">
+                    </div>
+                    <div class="tag-text">30 Minutes</div>
+                </div>
+                <div class="info-tag">
+                    <div class="tag-icon">
+                        <img src="images/ForkKnife.svg" alt="fork and knife">
+                    </div>
+                    <div class="tag-text">Western</div>
+                </div>
+            </div>
+    </a>
+</div>
+<!--card3-->
+<div class="card card-recipe">
+    <div class="like">
+    <img src="/images/Group 852.svg" alt="Like it">
+    </div>
+    <a href="#" class="image-link">
+        <img src="/images/image 26 (8).svg" alt="Recipie 3">
+      <div class="caption">Healthy Japanese Fried Rice with Asparagus</div>
+      <div class="info-tags">
+                <div class="info-tag">
+                    <div class="tag-icon">
+                        <img src="images/Timer.svg" alt="Clock">
+                    </div>
+                    <div class="tag-text">30 Minutes</div>
+                </div>
+                <div class="info-tag">
+                    <div class="tag-icon">
+                        <img src="images/ForkKnife.svg" alt="fork and knife">
+                    </div>
+                    <div class="tag-text">Healthy</div>
+                </div>
+            </div>
+    </a>
+</div>
+<!--card4-->
+<div class="card card-recipe">
+    <div class="like">
+    <img src="/images/Group 851.svg" alt="Like it">
+    </div>
+    <a href="#" class="image-link">
+        <img src="/images/image 26 (9).svg" alt="Recipie 3">
+      <div class="caption">Cauliflower Walnut Vegetarian Taco Meat</div>
+      <div class="info-tags">
+                <div class="info-tag">
+                    <div class="tag-icon">
+                        <img src="images/Timer.svg" alt="Clock">
+                    </div>
+                    <div class="tag-text">30 Minutes</div>
+                </div>
+                <div class="info-tag">
+                    <div class="tag-icon">
+                        <img src="images/ForkKnife.svg" alt="fork and knife">
+                    </div>
+                    <div class="tag-text">Eastern</div>
+                </div>
+            </div>
+    </a>
+</div>
+<!--card5-->
+<div class="card card-recipe">
+    <div class="like">
+    <img src="/images/Group 852.svg" alt="Like it">
+    </div>
+    <a href="#" class="image-link">
+        <img src="/images/image 26 (10).svg" alt="Recipie 3">
+      <div class="caption">Rainbow Chicken Salad with Almond Honey Mustard Dressing</div>
+      <div class="info-tags">
+                <div class="info-tag">
+                    <div class="tag-icon">
+                        <img src="images/Timer.svg" alt="Clock">
+                    </div>
+                    <div class="tag-text">30 Minutes</div>
+                </div>
+                <div class="info-tag">
+                    <div class="tag-icon">
+                        <img src="images/ForkKnife.svg" alt="fork and knife">
+                    </div>
+                    <div class="tag-text">Healthy</div>
+                </div>
+            </div>
+    </a>
+</div>
+<!--card6-->
+<div class="card card-recipe">
+    <div class="like">
+    <img src="/images/Group 851.svg" alt="Like it">
+    </div>
+    <a href="#" class="image-link">
+        <img src="/images/image 26 (11).svg" alt="Recipie 3">
+      <div class="caption">Barbeque Spicy Sandwiches with Chips </div>
+      <div class="info-tags">
+                <div class="info-tag">
+                    <div class="tag-icon">
+                        <img src="images/Timer.svg" alt="Clock">
+                    </div>
+                    <div class="tag-text">30 Minutes</div>
+                </div>
+                <div class="info-tag">
+                    <div class="tag-icon">
+                        <img src="images/ForkKnife.svg" alt="fork and knife">
+                    </div>
+                    <div class="tag-text">Snack</div>
+                </div>
+            </div>
+    </a>
+</div>
+<!--card7-->
+<div class="card card-recipe">
+    <div class="like">
+    <img src="/images/Group 851.svg" alt="Like it">
+    </div>
+    <a href="#" class="image-link">
+        <img src="/images/image 26 (12).svg" alt="Recipie 3">
+      <div class="caption">Firecracker Vegan Lettuce Wraps - Spicy! </div>
+      <div class="info-tags">
+                <div class="info-tag">
+                    <div class="tag-icon">
+                        <img src="images/Timer.svg" alt="Clock">
+                    </div>
+                    <div class="tag-text">30 Minutes</div>
+                </div>
+                <div class="info-tag">
+                    <div class="tag-icon">
+                        <img src="images/ForkKnife.svg" alt="fork and knife">
+                    </div>
+                    <div class="tag-text">SeaFood</div>
+                </div>
+            </div>
+    </a>
+</div>
+<!--card8-->
+<div class="card card-recipe">
+    <div class="like">
+    <img src="/images/Group 852.svg" alt="Like it">
+    </div>
+    <a href="#" class="image-link">
+        <img src="/images/Mask Group (3).svg" alt="Recipie 3">
+      <div class="caption">Chicken Ramen Soup with Mushroom </div>
+      <div class="info-tags">
+                <div class="info-tag">
+                    <div class="tag-icon">
+                        <img src="images/Timer.svg" alt="Clock">
+                    </div>
+                    <div class="tag-text">30 Minutes</div>
+                </div>
+                <div class="info-tag">
+                    <div class="tag-icon">
+                        <img src="images/ForkKnife.svg" alt="fork and knife">
+                    </div>
+                    <div class="tag-text">Japanese</div>
+                </div>
+            </div>
+    </a>
+</div>
+</div>
+</div>
+</section>
+<!--cta-section-->
+<section class="cta">
+    <div class="container">
+    <div class="cta-section">
+        <div class="cta-content">
+            <h2>
+                Deliciousness to your inbox
+            </h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor<br> incididunt ut labore et dolore magna aliqut enim ad minim 
+            </p>
+        <div class="subscription-block">
+            <div class="subscription-box">
+                <input type="email" id="subscription-email" placeholder="Your email address...">
+                <button class="view-btn" type="submit">Subscribe</button>
+            </div>
+        </div>
+            <div class="image1">
+                <img src="images/kisspng-salad-salad-fresh-food-healthylife-vegetables-vegetarian-5d42e3a7cb8543 1.svg" alt="Salad">
+            </div>
+        <div class="image2">
+        <img src="images/Photo.svg" alt="Photo">
+        </div>
+        </div>
+    </div>
+    </div>
+</section>
+<!--footer-->
+<section class="footer">
+<div class="container">
+    <div class="topPart">
+        <div class="footerContent">
+            <img src="/images/Foodieland..svg" alt="Logo" class="logo"/>
+            <p>Lorem ipsum dolor sit amet, consectetuipisicing elit.</p>
+        </div>
+        <div class="footerNavbar">
+            <nav class="nav-links">
+                    <a href="#Recipes">Recipes</a>
+                    <a href="#Blog">Blog</a>
+                    <a href="#Contact">Contact</a>
+                    <a href="#About">About us</a>
+                </nav>
+        </div>
+    </div>
+        <hr>
+    <div class="bottomPart">
+        <div class="copywrite">
+            <p>© 2020 Flowbase. Powered by <span class="red-word">Webflow</span></p>
+        </div>
+        <div class="social-icons">
+                    <a class="fb-icon"   href="#"><img src="/images/001-facebook.svg" alt="Facebook"></a>
+                    <a class="twitter-icon" href="#"><img src="images/Path.svg" alt="Twitter"></a>
+                    <a class="insta-icon" href="#"><img src="images/004-instagram.svg" alt="004-instagram"></a>
+        </div>
+    </div>
 </div>
 </section>
 </div>
