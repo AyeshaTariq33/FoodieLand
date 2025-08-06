@@ -33,11 +33,13 @@
 </header>
 <hr>
 <!-- Slider Section 1-->
- <section class="recipe-slider">
+ <section>
+<div class="container">
+ <div class="recipe-slider">
         <div class="recipe-card">
             <div class="recipe-content">
                 <div class="tag">
-                <img src="/images/image 14.svg" alt="icon" />
+                <img src="/images/image 14.svg" alt="icon"/>
                 Hot Recipes
                 </div>
                 <h1>Spicy delicious chicken wings</h1>
@@ -67,10 +69,9 @@
             </div>
         </div>
         <div class="recipe-image">
-            <img src="/images/slider.svg" alt="Chicken Wings" />
-            
+            <img src="/images/baked-chicken-wings-asian-style-tomatoes-sauce-plate 1.png" alt="Chicken Wings" />            
         </div>
-    </div>
+        </div>
     <!-- Slider Section 2-->
     <div class="recipe-card">
             <div class="recipe-content">
@@ -105,8 +106,7 @@
             </div>
         </div>
         <div class="recipe-image">
-            <img src="/images/slider.svg" alt="Chicken Wings" />
-            
+            <img src="/images/baked-chicken-wings-asian-style-tomatoes-sauce-plate 1.png" alt="Chicken Wings" />            
         </div>
     </div>
     <!-- Slider Section 3-->
@@ -143,25 +143,12 @@
             </div>
         </div>
         <div class="recipe-image">
-            <img src="/images/slider.svg" alt="Chicken Wings" />
+            <img src="/images/baked-chicken-wings-asian-style-tomatoes-sauce-plate 1.png" alt="Chicken Wings" />            
             
         </div>
     </div>
+</div>
 </section>
-<script>
-            $(document).ready(function () {
-                $('.recipe-slider').slick({
-                    dots: false,
-                    infinite: true,
-                    speed: 800,
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    autoplay: true,
-                    autoplaySpeed: 4000,
-                    arrows: false
-                });
-            });
-</script>
 <!--Categories-->
 <section class="categories">
     <div class="container">
@@ -209,6 +196,20 @@
 </div>
  </div>
 </section>
+<script>
+            $(document).ready(function () {
+                $('.recipe-slider').slick({
+                    dots: false,
+                    infinite: true,
+                    speed: 800,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 4000,
+                    arrows: false
+                });
+            });
+</script>
 <!--Recipies-->
 <section class="recipies">
 <div class="container">
