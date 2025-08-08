@@ -7,6 +7,7 @@ body {
   font-family: 'Inter', sans-serif;
   background-color: #ffffff;
   color: #191A23;
+  overflow-x: hidden;
 }
 .container {
   max-width: 1240px;
@@ -89,7 +90,8 @@ hr {
   background-color: #E7FAFE;
   align-items: stretch;
   border-radius: 40px;
-  overflow: hidden; 
+  overflow: hidden;
+  width: 100%;
   max-width: 1160px !important;
   margin-bottom: 40px;
   flex: 0 0 auto;
@@ -1063,7 +1065,6 @@ small {
         margin: 0 10px 20px 10px;
     }
     .slick-initialized .slick-slide {
-        display: block !important;
         margin-left: 0;
     }
     .recipe-content {

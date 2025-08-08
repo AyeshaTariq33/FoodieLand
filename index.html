@@ -149,6 +149,20 @@
     </div>
 </div>
 </section>
+<script>
+            $(document).ready(function () {
+                $('.recipe-slider').slick({
+                    dots: false,
+                    infinite: false,
+                    speed: 800,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 4000,
+                    arrows: false
+                });
+            });
+</script>
 <!--Categories-->
 <section class="categories">
     <div class="container">
@@ -196,20 +210,6 @@
 </div>
  </div>
 </section>
-<script>
-            $(document).ready(function () {
-                $('.recipe-slider').slick({
-                    dots: false,
-                    infinite: true,
-                    speed: 800,
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    autoplay: true,
-                    autoplaySpeed: 4000,
-                    arrows: false
-                });
-            });
-</script>
 <!--Recipies-->
 <section class="recipies">
 <div class="container">
